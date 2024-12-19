@@ -100,6 +100,7 @@ const Destinations = () => {
                 src={image}
                 alt={`${destination.name} ${idx + 1}`}
                 className="destination-image"
+                loading="lazy"
                 onClick={() => handleImageClick(image)}
               />
             ))}
