@@ -6,7 +6,7 @@ import About from './pages/About.jsx';
 import Destinations from './pages/Destinations.jsx';
 import Booking from './pages/Booking.jsx';
 import Contactus from './pages/Contactus.jsx';
-import Pricing from './pages/pricing.jsx';
+import Pricing from './pages/Pricing.jsx';
 import Footer from './components/Footer.jsx';
 
 
