@@ -1,13 +1,13 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Home from './pages/Home';
-import About from './pages/About';
-import Destinations from './pages/Destinations';
-import Booking from './pages/Booking';
-import Contactus from './pages/Contactus';
-import Pricing from './pages/pricing';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar.jsx';
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+import Destinations from './pages/Destinations.jsx';
+import Booking from './pages/Booking.jsx';
+import Contactus from './pages/Contactus.jsx';
+import Pricing from './pages/pricing.jsx';
+import Footer from './components/Footer.jsx';
 
 
 const App = () => {
