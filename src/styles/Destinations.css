@@ -1,0 +1,178 @@
+/* Destinations.css */
+
+/* General container for the destinations */
+.destinations-container {
+   
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Header styles */
+  .destinations-container h1 {
+    margin-top: 80px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  /* Individual destination container */
+  .destination {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .destination:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Destination title */
+  .destination h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+  }
+  
+  /* Destination description */
+  .destination p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+  }
+  
+  /* Images container for each destination */
+  .destination-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  /* Individual images */
+  .destination-image {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .destination-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .destination-images {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .destination-image {
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
+  
+    .destinations-container h1 {
+      font-size: 2rem;
+    }
+  
+    .destination h2 {
+      font-size: 1.5rem;
+    }
+  
+    .destination p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .destination {
+      padding: 15px;
+    }
+  
+    .destination h2 {
+      font-size: 1.2rem;
+    }
+  
+    .destination p {
+      font-size: 0.9rem;
+    }
+  
+    .destination-images {
+      gap: 10px;
+    }
+  
+    .destination-image {
+      max-width: 100%;
+    }
+  }
+  /* Modal container */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  /* Modal content */
+  .modal-content {
+    position: relative;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: hidden;
+  }
+  
+  /* Modal image */
+  .modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  /* Close button */
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5e5e;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+  }
+  
+  .close-button:hover {
+    background: #ff1e1e;
+  }
+  
+  

@@ -1,0 +1,254 @@
+/* Home.css */
+
+.home {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 60px;
+  background: url('/kilimanjaro.PNG') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 5rem 0;
+ 
+
+  /* Vibrant background color */
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cta-btn {
+  background-color: #ff5722; /* Vibrant orange */
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.cta-btn1 {
+  gap: 20px;
+  background-color: #ff5722; /* Vibrant orange */
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 2rem;
+  margin-left: 50px;
+  cursor: pointer;
+  height: 60px;
+  border-radius: 40px;
+  width: 250px;
+  font-weight: bold;
+}
+.cta-btn2 {
+  margin-top: 20px;
+  gap: 20px;
+  background-color: #ff5722; /* Vibrant orange */
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 2rem;
+  margin-left: 50px;
+  cursor: pointer;
+  height: 60px;
+  border-radius: 40px;
+  width: 250px;
+  font-weight: bold;
+}
+
+
+.cta-btn:hover {
+  background-color: #ff5722; /* Darker orange on hover */
+}
+.cta-btn1:hover {
+  cursor: pointer;
+  background-color: #ff5722; /* Darker orange on hover */
+  scale: 1.1;
+  transition: 1ms;
+}
+.cta-btn2:hover {
+  cursor: pointer;
+  background-color: #ff5722; /* Darker orange on hover */
+  scale: 1.1;
+  transition: 1ms;
+}
+
+/* About Section */
+.about-content{
+  opacity: 0.9;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  opacity: 1;
+  color: #0070f3; /* Vibrant blue */
+  margin-bottom: 1rem;
+  
+}
+
+.about-content p {
+  font-size: 1.4rem;
+  font: bold;
+  color:black;
+  font-weight: 600;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Featured Destinations Section */
+.destinations {
+  background-color: #ffe4e1; /* Soft coral */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.destinations h2 {
+  font-size: 2.5rem;
+  color: #0070f3; /* Vibrant blue */
+  margin-bottom: 2rem;
+}
+
+.destination-cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  justify-content: space-around;
+  gap: 1.5rem; /* Add space between cards */
+}
+
+.destination-card {
+  flex: 1 1 calc(33% - 2rem); /* Ensure 3 cards per row, adjust with spacing */
+  max-width: 300px;
+  margin: 1rem;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.destination-card img {
+  width: 100%;
+  height: 200px; /* Consistent height for all images */
+  object-fit: cover; /* Ensure image fits nicely */
+  border-radius: 8px;
+}
+
+.destination-card h3 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #ff6347; /* Vibrant red */
+}
+
+.destination-card p {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+/* Why Choose Us Section */
+.why-us {
+  background-color: #ffebcd; /* Light almond */
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.why-us h2 {
+  font-size: 2.5rem;
+  color: #0070f3; /* Vibrant blue */
+  margin-bottom: 2rem;
+}
+
+.why-us ul {
+  list-style: none;
+  padding: 0;
+}
+
+.why-us li {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  color: #ff6347; /* Vibrant red */
+  margin-bottom: 2rem;
+}
+
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap; /* Make responsive */
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.testimonial-card {
+  flex: 1 1 calc(33% - 2rem);
+  max-width: 300px;
+  margin: 1rem;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.testimonial-card h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0070f3; /* Vibrant blue */
+}
+
+/* Call-to-Action Section */
+.cta {
+  background-color: #ff6347; /* Vibrant red */
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.cta-btn {
+  background-color: #ffffff; /* White button */
+  color: #ff6347; /* Vibrant red text */
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.cta-btn:hover {
+  background-color: #ff5722; /* Darker red on hover */
+  color: white;
+}
+.keywords{
+  color: blue;
+  font-size: larger;
+}

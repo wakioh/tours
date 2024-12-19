@@ -1,0 +1,173 @@
+/* General Container */
+.booking-container {
+ 
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #f0f8ff);
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+.booking-container h2 {
+  margin-top: 80px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1fe218;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+/* Form Styling */
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444444;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form button {
+  padding: 12px 15px;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #5e8dfd;
+  box-shadow: 0px 4px 8px rgba(94, 141, 253, 0.3);
+}
+
+.booking-form button {
+  background: linear-gradient(135deg, #5e8dfd, #3a69e6);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.booking-form button:hover {
+  background: linear-gradient(135deg, #3a69e6, #1f4cbc);
+  transform: scale(1.02);
+}
+
+/* Checkbox List */
+fieldset {
+  border: 2px dashed #5e8dfd;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9fcff;
+}
+
+legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.destinations-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.destination-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95rem;
+  color: #333333;
+  font-weight: 500;
+}
+
+/* CTA Section */
+.cta {
+  text-align: center;
+  margin-top: 30px;
+  padding: 25px;
+  background: linear-gradient(135deg, #ffe9c6, #ffd29d);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cta h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff6a00;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  font-size: 1rem;
+  color: #4a4a4a;
+}
+
+.schedule-call-btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #28a745;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 15px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.schedule-call-btn:hover {
+  background: #218838;
+  transform: translateY(-3px);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .booking-container {
+    padding: 20px;
+  }
+
+  .booking-form label {
+    font-size: 0.9rem;
+  }
+
+  .booking-form input,
+  .booking-form select,
+  .booking-form button {
+    font-size: 0.9rem;
+  }
+
+  .destinations-list {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  }
+
+  .schedule-call-btn {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-container {
+    margin: 10px;
+  }
+
+  .booking-form button {
+    padding: 10px;
+  }
+}

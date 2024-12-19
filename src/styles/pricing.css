@@ -1,0 +1,163 @@
+/* Pricing.css */
+.pricing-container {
+    background-color: #f0f8ff; /* Soft light blue background */
+    padding: 3rem 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pricing-container:hover {
+    transform: translateY(-10px); /* Slight lift on hover */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  .pricing-heading {
+    font-size: 2.8rem;
+    color: #0077cc; /* Vibrant blue */
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .pricing-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+    line-height: 1.8;
+    font-style: italic;
+    transition: color 0.3s ease;
+  }
+  
+  .pricing-container:hover .pricing-description {
+    color: #333; /* Darken text when container is hovered */
+  }
+  
+  .pricing-price {
+    font-size: 3.5rem;
+    color: #ff6f61; /* Warm coral color */
+    font-weight: 900;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .pricing-price span {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: 300;
+  }
+  
+  .pricing-price:hover {
+    transform: scale(1.1); /* Slightly enlarge the price on hover */
+    color: #e53e3e; /* Change to a brighter red color */
+  }
+  
+  .pricing-details {
+    text-align: left;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .pricing-details h3 {
+    font-size: 1.8rem;
+    color: #0077cc;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .pricing-details ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pricing-details li {
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .pricing-footer {
+    margin-top: 3rem;
+  }
+  
+  .pricing-footer h3 {
+    font-size: 1.8rem;
+    color: #0077cc;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+  
+  .cta-btn {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 1.5rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 700;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e53e3e; /* Darker coral */
+    transform: translateY(-5px); /* Slight lift effect */
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-container {
+      padding: 2rem;
+      margin: 1rem;
+    }
+  
+    .pricing-heading {
+      font-size: 2.2rem;
+    }
+  
+    .pricing-price {
+      font-size: 3rem;
+    }
+  
+    .pricing-details {
+      font-size: 1rem;
+    }
+  
+    .cta-btn {
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .pricing-container {
+      padding: 1.5rem;
+    }
+  
+    .pricing-heading {
+      font-size: 1.8rem;
+    }
+  
+    .pricing-price {
+      font-size: 2.5rem;
+    }
+  
+    .pricing-details {
+      font-size: 0.9rem;
+    }
+  
+    .cta-btn {
+      font-size: 1rem;
+      padding: 1rem 1.5rem;
+    }
+  }
+  

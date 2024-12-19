@@ -1,0 +1,134 @@
+/* Contactus.css */
+
+.contactus {
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .contactus-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .contactus-header h1 {
+    font-size: 2.5rem;
+    color: #0070f3;
+  }
+  
+  .contactus-header p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .contactus-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contactus-form,
+  .contactus-details {
+    flex: 1;
+    min-width: 300px;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contactus-form h2,
+  .contactus-details h2 {
+    font-size: 1.8rem;
+    color: #005bb5;
+    margin-bottom: 1rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: #0070f3;
+  }
+  
+  .btn-submit {
+    display: inline-block;
+    background-color: #0070f3;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-submit:hover {
+    background-color: #005bb5;
+  }
+  
+  .contactus-details p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .contactus-details strong {
+    color: #333;
+  }
+  
+  /* Floating WhatsApp Icon */
+  .floating-whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+  
+  .floating-whatsapp img {
+    width: 50px;
+    height: 50px;
+    display: block;
+  }
+  
+  .floating-whatsapp:hover {
+    background: #1EBE5A;
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+  }
+  /* Status Message */
+.status-message {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #0070f3;
+    text-align: center;
+  }
+  
