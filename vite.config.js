@@ -1,6 +1,7 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vite'; 
 import react from '@vitejs/plugin-react';
 import viteImagemin from 'vite-plugin-imagemin';
+import Sitemap from 'vite-plugin-sitemap';
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -31,6 +32,17 @@ export default defineConfig({
       webp: {
         quality: 80,
       },
+    }),
+    Sitemap({
+      hostname: 'https://www.kiohtoursandtravel.com', // Replace with your actual domain
+      routes: [
+        '/',              // Home page
+        '/about',         // About page
+        '/destinations',  // Destinations page
+        '/booking',       // Booking page
+        '/contact',       // Contact page
+        '/pricing',       // Pricing page
+      ],
     }),
   ],
 });
