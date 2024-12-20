@@ -11,9 +11,6 @@
   color: white;
   text-align: center;
   padding: 5rem 0;
- 
-
-  /* Vibrant background color */
 }
 
 .hero-text h1 {
@@ -36,48 +33,30 @@
   font-size: 1rem;
   cursor: pointer;
   border-radius: 5px;
-}
-.cta-btn1 {
-  gap: 20px;
-  background-color: #ff5722; /* Vibrant orange */
-  color: white;
-  border: none;
-  padding: 0.8rem 2rem;
-  font-size: 2rem;
-  margin-left: 50px;
-  cursor: pointer;
-  height: 60px;
-  border-radius: 40px;
-  width: 250px;
-  font-weight: bold;
-}
-.cta-btn2 {
-  margin-top: 20px;
-  gap: 20px;
-  background-color: #ff5722; /* Vibrant orange */
-  color: white;
-  border: none;
-  padding: 0.8rem 2rem;
-  font-size: 2rem;
-  margin-left: 50px;
-  cursor: pointer;
-  height: 60px;
-  border-radius: 40px;
-  width: 250px;
-  font-weight: bold;
+  margin: 10px; /* Adds spacing between buttons */
 }
 
+.cta-btn1, .cta-btn2 {
+  gap: 20px;
+  background-color: #ff5722; /* Vibrant orange */
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  margin-left: 50px;
+  cursor: pointer;
+  height: 60px;
+  border-radius: 40px;
+  width: 250px;
+  font-weight: bold;
+  margin: 10px; /* Adds spacing between buttons */
+}
 
 .cta-btn:hover {
   background-color: #ff5722; /* Darker orange on hover */
 }
-.cta-btn1:hover {
-  cursor: pointer;
-  background-color: #ff5722; /* Darker orange on hover */
-  scale: 1.1;
-  transition: 1ms;
-}
-.cta-btn2:hover {
+
+.cta-btn1:hover, .cta-btn2:hover {
   cursor: pointer;
   background-color: #ff5722; /* Darker orange on hover */
   scale: 1.1;
@@ -85,7 +64,7 @@
 }
 
 /* About Section */
-.about-content{
+.about-content {
   opacity: 0.9;
 }
 
@@ -94,13 +73,12 @@
   opacity: 1;
   color: #0070f3; /* Vibrant blue */
   margin-bottom: 1rem;
-  
 }
 
 .about-content p {
   font-size: 1.4rem;
   font: bold;
-  color:black;
+  color: black;
   font-weight: 600;
   max-width: 800px;
   margin: 0 auto;
@@ -234,21 +212,52 @@
   margin-bottom: 1rem;
 }
 
-.cta-btn {
-  background-color: #ffffff; /* White button */
-  color: #ff6347; /* Vibrant red text */
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  border-radius: 5px;
-  cursor: pointer;
-  border: none;
-}
-
 .cta-btn:hover {
   background-color: #ff5722; /* Darker red on hover */
   color: white;
 }
-.keywords{
+
+.keywords {
   color: blue;
   font-size: larger;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .cta-btn {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 0.6rem 1.5rem;
+  }
+
+  .cta-btn1, .cta-btn2 {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    margin-left: 20px; /* Reduce left margin */
+    width: 200px; /* Reduce width */
+    height: 50px; /* Reduce height */
+  }
+}
+
+@media (max-width: 580px) {
+  .cta-btn {
+    font-size: 0.8rem; /* Further adjust font size */
+    padding: 0.5rem 1rem;
+  }
+
+  .cta-btn1, .cta-btn2 {
+    font-size: 1.2rem; /* Further adjust font size */
+    margin-left: 10px; /* Further reduce left margin */
+    width: 180px; /* Reduce width */
+    height: 45px; /* Reduce height */
+  }
+
+  .destination-cards {
+    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center align cards */
+  }
+
+  .destination-card {
+    flex: 1 1 100%; /* Take full width */
+    max-width: 340px; /* Slightly increase width */
+  }
 }
