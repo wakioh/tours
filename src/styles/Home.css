@@ -16,7 +16,7 @@
 .hero-text h1 {
   font-size: 3.5rem;
   margin-bottom: 1rem;
-  color: #fff;
+  color:greenyellow;
 }
 
 .hero-text p {
@@ -36,9 +36,9 @@
   margin: 10px; /* Adds spacing between buttons */
 }
 
-.cta-btn1, .cta-btn2 {
+.cta-btn, .cta-btn1, .cta-btn2 {
   gap: 20px;
-  background-color: #ff5722; /* Vibrant orange */
+  background-color: #3822ff; /* Vibrant orange */
   color: white;
   border: none;
   padding: 0.8rem 2rem;
@@ -53,12 +53,12 @@
 }
 
 .cta-btn:hover {
-  background-color: #ff5722; /* Darker orange on hover */
+  background-color: #22ff2d; /* Darker orange on hover */
 }
 
 .cta-btn1:hover, .cta-btn2:hover {
   cursor: pointer;
-  background-color: #ff5722; /* Darker orange on hover */
+  background-color: #2243ff; /* Darker orange on hover */
   scale: 1.1;
   transition: 1ms;
 }
@@ -238,6 +238,11 @@
 }
 
 @media (max-width: 580px) {
+  .hero {
+   /* Ensure the image fits on very small screens */
+    padding: 2rem 0; /* Reduce padding for better fit */
+  }
+  
   .cta-btn {
     font-size: 0.8rem; /* Further adjust font size */
     padding: 0.5rem 1rem;

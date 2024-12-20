@@ -6,7 +6,7 @@ const Pricing = () => {
     <div className="pricing-container">
       <h2 className="pricing-heading">Discover Kenya in Comfort and Style</h2>
       <p className="pricing-description">
-        Embark on an unforgettable adventure across Kenya with our exclusive 3-day package. Explore four iconic destinations, enjoy luxurious accommodation, indulge in delicious meals, and travel in comfort—all for just <strong>$1500 USD</strong> per person. For families, we offer a special deal—bring your child under 3 years of age for free! This incredible offer includes everything you need to experience the beauty of Kenya with peace of mind.
+        Embark on an unforgettable adventure across Kenya with our exclusive 3-day package. Explore four iconic destinations, enjoy luxurious accommodation, indulge in delicious meals, and travel in comfort—all for just <strong className='main-price'>$1500 USD</strong> per person. For families, we offer a special deal—bring your child under 3 years of age for free! This incredible offer includes everything you need to experience the beauty of Kenya with peace of mind.
       </p>
       
       <div className="pricing-details">

@@ -160,4 +160,8 @@
       padding: 1rem 1.5rem;
     }
   }
-  
+  .main-price{
+    color: rgb(255, 0, 200);
+    font: bolder;
+    font-size: xx-large;
+  }
